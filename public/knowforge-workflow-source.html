@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KnowForge 知识重构流程</title>
+  <style>
+    @font-face{font-family:Alimama;src:url('/fonts/AlimamaShuHeiTi-Bold.woff2') format('woff2');font-weight:700}
+    *{box-sizing:border-box}
+    html,body{width:1200px;height:640px;margin:0;overflow:hidden;background:#f7f6fa;color:#252139}
+    body{font-family:Alimama,"Microsoft YaHei",sans-serif}
+    .canvas{position:relative;width:1200px;height:640px;padding:42px 46px;background:radial-gradient(circle at 50% 42%,rgba(139,75,216,.07),transparent 40%),#f7f6fa}
+    .top{display:flex;align-items:flex-start;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .mark{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;color:#fff;background:#8b4bd8;font-size:18px;box-shadow:0 9px 22px rgba(139,75,216,.18);transform:rotate(-3deg)}
+    .brand strong,.brand span{display:block}.brand strong{font-size:17px}.brand span{margin-top:2px;color:#8a8696;font-family:"Microsoft YaHei",sans-serif;font-size:9px}
+    .title{text-align:right}.title small{color:#8b4bd8;font-size:9px;letter-spacing:.13em}.title h1{margin:6px 0 0;font-size:24px;letter-spacing:-.04em}
+    .flow{position:absolute;top:158px;right:46px;left:46px;display:grid;grid-template-columns:repeat(4,1fr);gap:42px}
+    .stage{position:relative;height:304px;padding:24px 22px;border:1px solid #ded9e7;border-radius:19px;background:rgba(255,255,255,.94);box-shadow:0 18px 46px rgba(39,32,56,.065)}
+    .stage:not(:last-child)::after{content:"→";position:absolute;top:133px;right:-34px;color:#8b4bd8;font-size:24px}
+    .number{color:#a99fb5;font-family:Consolas,monospace;font-size:9px;letter-spacing:.12em}
+    .icon{width:46px;height:46px;margin-top:20px;display:grid;place-items:center;border-radius:12px;color:#8b4bd8;background:#f1ebf8;font-size:20px}
+    h2{margin:22px 0 7px;font-size:18px}p{margin:0;color:#777282;font-family:"Microsoft YaHei",sans-serif;font-size:10px;line-height:17px}
+    .tags{position:absolute;right:22px;bottom:22px;left:22px;display:flex;flex-wrap:wrap;gap:6px}
+    .tags span{height:24px;padding:0 8px;display:grid;place-items:center;border:1px solid #e6e2ea;border-radius:6px;color:#827d8c;background:#faf9fb;font-family:"Microsoft YaHei",sans-serif;font-size:8px}
+    .pipeline{position:absolute;right:46px;bottom:42px;left:46px;height:50px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;border:1px solid #e3dfe8;border-radius:12px;background:#f0eef4;color:#5f5a6d;font-family:Consolas,"Microsoft YaHei",sans-serif;font-size:9px}
+    .pipeline b{color:#8b4bd8;font-size:13px}.pipeline em{font-style:normal;color:#97919f}
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <header class="top">
+      <div class="brand"><div class="mark">K</div><div><strong>KnowForge</strong><span>知识编译器</span></div></div>
+      <div class="title"><small>KNOWLEDGE RECONSTRUCTION</small><h1>从原始资料到可调用知识</h1></div>
+    </header>
+    <section class="flow">
+      <article class="stage"><span class="number">01 / SOURCE</span><div class="icon">↑</div><h2>导入资料</h2><p>接收零散文档与信息来源，保留文件、URL 和原始位置。</p><div class="tags"><span>PDF</span><span>网页</span><span>会议</span><span>Repo</span></div></article>
+      <article class="stage"><span class="number">02 / PARSE</span><div class="icon">⌘</div><h2>识别关系</h2><p>提取实体、事件、决策和时间线，建立跨来源之间的连接。</p><div class="tags"><span>实体</span><span>事件</span><span>关系</span></div></article>
+      <article class="stage"><span class="number">03 / COMPILE</span><div class="icon">▤</div><h2>重构知识</h2><p>合并重复信息并保留证据，生成可维护的知识页面。</p><div class="tags"><span>知识页</span><span>引用</span><span>置信度</span></div></article>
+      <article class="stage"><span class="number">04 / SERVE</span><div class="icon">◇</div><h2>安全调用</h2><p>让用户与外部 AI 在同一可信上下文中阅读、提问和溯源。</p><div class="tags"><span>Ask</span><span>关联</span><span>应用</span><span>MCP</span></div></article>
+    </section>
+    <footer class="pipeline"><span>Source</span><b>→</b><span>Object</span><b>→</b><span>Knowledge Page</span><b>→</b><span>Ask / MCP</span><em>可追溯 · 可复用 · 只读调用</em></footer>
+  </main>
+</body>
+</html>
