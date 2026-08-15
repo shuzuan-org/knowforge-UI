@@ -4641,6 +4641,13 @@ button.source-file-row:hover { background: #fafafb; }
 .kf-home-capabilities { padding: 92px 0 112px; border-top: 1px solid #ebe8ef; }
 .kf-home-section-heading-left { max-width: none; margin-bottom: 42px; text-align: left; }
 .kf-home-section-heading-left h2 { font-size: clamp(38px,3.5vw,56px); }
+.kf-home-section-heading-left h2 {
+  /* Keep the capabilities headline on a single line at desktop widths so the
+     final character never becomes an orphaned line by itself. */
+  max-width: none;
+  width: max-content;
+  white-space: nowrap;
+}
 .kf-home-capability-strip { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); border-top: 1px solid var(--home-line); border-bottom: 1px solid var(--home-line); }
 .kf-home-capability-strip article { position: relative; min-height: 260px; padding: 34px 30px; border-right: 1px solid var(--home-line); }
 .kf-home-capability-strip article:last-child { border-right: 0; }
@@ -4695,6 +4702,12 @@ button.source-file-row:hover { background: #fafafb; }
   .kf-home-orbit-note { position: static; margin-top: 18px; }
   .kf-home-section-heading { margin-bottom: 42px; text-align: left; }
   .kf-home-section-heading h2 { font-size: 40px; }
+  .kf-home-section-heading-left h2 {
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
+    text-wrap: balance;
+  }
   .kf-home-scenario { min-height: 0; padding: 58px 0; }
   .kf-home-scenario .kf-home-placeholder { min-height: 360px; }
   .kf-home-scenario-copy h3 { font-size: 34px; }

@@ -1309,7 +1309,7 @@ function KnowForgeLanding({ onEnter }: { onEnter: () => void }) {
         <section className="kf-home-statement" id="workflow">
           <div className="kf-home-statement-top"><span>KNOWFORGE</span><p>让资料从“存过”变成真正能持续使用的知识。</p></div>
           <div className="kf-home-statement-copy"><p>EVIDENCE, NOT MEMORY</p><h2>每条结论<br />都能回到证据现场</h2><div>不是让 AI 凭记忆复述，而是让每段知识保留来源、引用与上下文，随时可以回到原始资料核验。</div></div>
-          <figure className="kf-home-generated-visual kf-home-statement-visual"><img src="/knowforge-workflow.png" alt="KnowForge 从导入资料到安全调用的知识重构流程" /><figcaption><span>KNOWFORGE WORKFLOW</span><small>导入 → 识别 → 重构 → 调用</small></figcaption></figure>
+          <figure className="kf-home-generated-visual kf-home-statement-visual"><img src="/latest-workflow.png" alt="Metask Mind 最新知识库工作台" /><figcaption><span>KNOWFORGE WORKSPACE</span><small>最新工作台界面</small></figcaption></figure>
           <div className="kf-home-orbit-note"><Sparkle size={17} weight="regular" /><span>此处可补充品牌角色或知识助手插图</span></div>
         </section>
 
