@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" fill="none" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 360" fill="none" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#faf9fc"/>
@@ -17,94 +17,73 @@
   </defs>
 
   <!-- background -->
-  <rect width="1100" height="420" rx="16" fill="url(#bg)"/>
+  <rect width="1080" height="360" rx="16" fill="url(#bg)"/>
 
-  <!-- ===== LEFT: Documents ===== -->
+  <!-- ===== Panel 1: 原始资料 ===== -->
   <g filter="url(#cardShadow)">
-    <!-- PDF -->
-    <rect x="50" y="60" width="100" height="120" rx="8" fill="#fff" stroke="#e0dde8"/>
-    <rect x="64" y="76" width="72" height="6" rx="3" fill="#e85d5d" opacity="0.7"/>
-    <rect x="64" y="94" width="60" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="106" width="68" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="118" width="52" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="130" width="64" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="142" width="44" height="4" rx="2" fill="#ece8f3"/>
-    <text x="100" y="166" text-anchor="middle" font-size="11" fill="#999" font-weight="500">PDF</text>
-
-    <!-- Word -->
-    <rect x="95" y="130" width="100" height="120" rx="8" fill="#fff" stroke="#e0dde8"/>
-    <rect x="109" y="146" width="72" height="6" rx="3" fill="#4a72c4" opacity="0.7"/>
-    <rect x="109" y="164" width="60" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="109" y="176" width="68" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="109" y="188" width="52" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="109" y="200" width="64" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="109" y="212" width="44" height="4" rx="2" fill="#ece8f3"/>
-    <text x="145" y="236" text-anchor="middle" font-size="11" fill="#999" font-weight="500">Word</text>
-
-    <!-- Web -->
-    <rect x="50" y="230" width="100" height="120" rx="8" fill="#fff" stroke="#e0dde8"/>
-    <circle cx="64" cy="248" r="3" fill="#f0ad4e"/>
-    <circle cx="74" cy="248" r="3" fill="#5cb85c"/>
-    <circle cx="84" cy="248" r="3" fill="#d9534f"/>
-    <rect x="64" y="262" width="72" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="274" width="60" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="286" width="68" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="298" width="52" height="4" rx="2" fill="#ece8f3"/>
-    <rect x="64" y="310" width="40" height="4" rx="2" fill="#ece8f3"/>
-    <text x="100" y="336" text-anchor="middle" font-size="11" fill="#999" font-weight="500">Web</text>
+    <rect x="40" y="60" width="280" height="240" rx="14" fill="#fff" stroke="#e0dde8"/>
+    <!-- stacked doc icons -->
+    <rect x="85" y="110" width="80" height="100" rx="6" fill="#fff" stroke="#d4cde8" stroke-width="1.5"/>
+    <rect x="98" y="120" width="54" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="98" y="134" width="54" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="98" y="148" width="38" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="98" y="162" width="54" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="98" y="176" width="44" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="175" y="125" width="80" height="100" rx="6" fill="#fff" stroke="#d4cde8" stroke-width="1.5"/>
+    <rect x="188" y="135" width="54" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="188" y="149" width="54" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="188" y="163" width="38" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="188" y="177" width="54" height="5" rx="2.5" fill="#ece8f3"/>
+    <rect x="188" y="191" width="44" height="5" rx="2.5" fill="#ece8f3"/>
+    <text x="180" y="265" text-anchor="middle" font-size="14" font-weight="600" fill="#8047CC" opacity="0.6">原始资料</text>
   </g>
 
-  <text x="145" y="380" text-anchor="middle" font-size="14" font-weight="600" fill="#8047CC" opacity="0.6">原始资料</text>
-
-  <!-- ===== Arrow 1 ===== -->
-  <g opacity="0.4">
-    <line x1="220" y1="205" x2="310" y2="205" stroke="#8047CC" stroke-width="2" stroke-dasharray="6 4"/>
-    <polygon points="310,205 302,200 302,210" fill="#8047CC"/>
+  <!-- Arrow 1 -->
+  <g opacity="0.35">
+    <line x1="320" y1="180" x2="380" y2="180" stroke="#8047CC" stroke-width="2" stroke-dasharray="5 4"/>
+    <polygon points="380,180 372,176 372,184" fill="#8047CC"/>
   </g>
 
-  <!-- ===== MIDDLE: Extraction ===== -->
+  <!-- ===== Panel 2: 抽取实体与关系 ===== -->
   <g filter="url(#cardShadow)">
-    <rect x="320" y="150" width="130" height="110" rx="14" fill="#fff" stroke="#d4cde8"/>
-    <!-- simple graph icon -->
-    <circle cx="360" cy="195" r="9" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="410" cy="180" r="9" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="410" cy="215" r="9" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <line x1="360" y1="195" x2="410" y2="180" stroke="#c4b8e0" stroke-width="2"/>
-    <line x1="360" y1="195" x2="410" y2="215" stroke="#c4b8e0" stroke-width="2"/>
-    <line x1="410" y1="180" x2="410" y2="215" stroke="#c4b8e0" stroke-width="2"/>
-    <text x="385" y="248" text-anchor="middle" font-size="12" fill="#8047CC" font-weight="600">抽取实体与关系</text>
+    <rect x="390" y="60" width="280" height="240" rx="14" fill="#fff" stroke="#d4cde8"/>
+    <!-- 3 connected nodes -->
+    <circle cx="480" cy="150" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+    <circle cx="570" cy="130" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+    <circle cx="570" cy="200" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+    <line x1="480" y1="150" x2="570" y2="130" stroke="#c4b8e0" stroke-width="2.5"/>
+    <line x1="480" y1="150" x2="570" y2="200" stroke="#c4b8e0" stroke-width="2.5"/>
+    <line x1="570" y1="130" x2="570" y2="200" stroke="#c4b8e0" stroke-width="2.5"/>
+    <!-- small extraction sparks -->
+    <circle cx="510" cy="105" r="3" fill="#8047CC" opacity="0.3"/>
+    <circle cx="540" cy="175" r="2.5" fill="#8047CC" opacity="0.2"/>
+    <circle cx="445" cy="185" r="2" fill="#8047CC" opacity="0.25"/>
+    <text x="530" y="265" text-anchor="middle" font-size="14" font-weight="600" fill="#8047CC" opacity="0.6">抽取实体与关系</text>
   </g>
 
-  <!-- ===== Arrow 2 ===== -->
-  <g opacity="0.4">
-    <line x1="450" y1="205" x2="540" y2="205" stroke="#8047CC" stroke-width="2" stroke-dasharray="6 4"/>
-    <polygon points="540,205 532,200 532,210" fill="#8047CC"/>
+  <!-- Arrow 2 -->
+  <g opacity="0.35">
+    <line x1="670" y1="180" x2="730" y2="180" stroke="#8047CC" stroke-width="2" stroke-dasharray="5 4"/>
+    <polygon points="730,180 722,176 722,184" fill="#8047CC"/>
   </g>
 
-  <!-- ===== RIGHT: Knowledge Graph ===== -->
+  <!-- ===== Panel 3: 知识图谱 ===== -->
   <g filter="url(#cardShadow)">
-    <rect x="550" y="50" width="500" height="340" rx="14" fill="#fff" stroke="#e0dde8"/>
-
-    <!-- edges (minimal, abstract) -->
-    <line x1="700" y1="140" x2="860" y2="110" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="700" y1="140" x2="680" y2="280" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="860" y1="110" x2="980" y2="200" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="680" y1="280" x2="900" y2="290" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="980" y1="200" x2="900" y2="290" stroke="#d4cde8" stroke-width="2.5"/>
-
-    <!-- nodes (5 abstract, no labels) -->
-    <circle cx="700" cy="140" r="22" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="860" cy="110" r="18" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="980" cy="200" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.7"/>
-    <circle cx="680" cy="280" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.7"/>
-    <circle cx="900" cy="290" r="20" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-
-    <!-- subtle pulse on center node -->
-    <circle cx="900" cy="290" r="20" fill="none" stroke="#8047CC" stroke-width="1.5" opacity="0.2">
-      <animate attributeName="r" values="20;32;20" dur="3s" repeatCount="indefinite"/>
+    <rect x="740" y="60" width="300" height="240" rx="14" fill="#fff" stroke="#e0dde8"/>
+    <!-- clean graph: 5 abstract nodes, minimal edges -->
+    <line x1="850" y1="130" x2="950" y2="110" stroke="#d4cde8" stroke-width="2.5"/>
+    <line x1="850" y1="130" x2="830" y2="230" stroke="#d4cde8" stroke-width="2.5"/>
+    <line x1="950" y1="110" x2="980" y2="200" stroke="#d4cde8" stroke-width="2.5"/>
+    <line x1="830" y1="230" x2="980" y2="200" stroke="#d4cde8" stroke-width="2.5"/>
+    <circle cx="850" cy="130" r="18" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+    <circle cx="950" cy="110" r="14" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.8"/>
+    <circle cx="980" cy="200" r="13" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.7"/>
+    <circle cx="830" cy="230" r="13" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.7"/>
+    <!-- breathing pulse -->
+    <circle cx="850" cy="130" r="18" fill="none" stroke="#8047CC" stroke-width="1.5" opacity="0.2">
+      <animate attributeName="r" values="18;28;18" dur="3s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.2;0;0.2" dur="3s" repeatCount="indefinite"/>
     </circle>
+    <text x="890" y="265" text-anchor="middle" font-size="14" font-weight="600" fill="#8047CC" opacity="0.6">知识图谱</text>
   </g>
-
-  <text x="800" y="365" text-anchor="middle" font-size="14" font-weight="600" fill="#8047CC" opacity="0.6">知识图谱</text>
 </svg>
