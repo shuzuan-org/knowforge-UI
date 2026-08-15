@@ -85,38 +85,25 @@
   <g filter="url(#cardShadow)">
     <rect x="550" y="50" width="500" height="340" rx="14" fill="#fff" stroke="#e0dde8"/>
 
-    <!-- edges (clean, minimal) -->
-    <line x1="680" y1="120" x2="820" y2="100" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="680" y1="120" x2="650" y2="240" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="820" y1="100" x2="940" y2="170" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="650" y1="240" x2="790" y2="280" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="940" y1="170" x2="790" y2="280" stroke="#d4cde8" stroke-width="2.5"/>
-    <line x1="820" y1="100" x2="650" y2="240" stroke="#d4cde8" stroke-width="2.5"/>
+    <!-- edges (minimal, abstract) -->
+    <line x1="700" y1="140" x2="860" y2="110" stroke="#d4cde8" stroke-width="2.5"/>
+    <line x1="700" y1="140" x2="680" y2="280" stroke="#d4cde8" stroke-width="2.5"/>
+    <line x1="860" y1="110" x2="980" y2="200" stroke="#d4cde8" stroke-width="2.5"/>
+    <line x1="680" y1="280" x2="900" y2="290" stroke="#d4cde8" stroke-width="2.5"/>
+    <line x1="980" y1="200" x2="900" y2="290" stroke="#d4cde8" stroke-width="2.5"/>
 
-    <!-- nodes (6 only, clean) -->
-    <circle cx="680" cy="120" r="24" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="820" cy="100" r="22" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="940" cy="170" r="20" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="650" cy="240" r="20" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="790" cy="280" r="24" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
-    <circle cx="970" cy="290" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.5"/>
+    <!-- nodes (5 abstract, no labels) -->
+    <circle cx="700" cy="140" r="22" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+    <circle cx="860" cy="110" r="18" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+    <circle cx="980" cy="200" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.7"/>
+    <circle cx="680" cy="280" r="16" fill="url(#nodeG)" filter="url(#nodeShadow)" opacity="0.7"/>
+    <circle cx="900" cy="290" r="20" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
 
-    <!-- labels -->
-    <text x="680" y="125" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">项目A</text>
-    <text x="820" y="105" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">客户</text>
-    <text x="940" y="175" text-anchor="middle" font-size="9" fill="#fff" font-weight="600">合同</text>
-    <text x="650" y="245" text-anchor="middle" font-size="9" fill="#fff" font-weight="600">人</text>
-    <text x="790" y="285" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">结论</text>
-
-    <!-- evidence badge on one node -->
-    <circle cx="790" cy="280" r="32" fill="none" stroke="#8047CC" stroke-width="1.5" opacity="0.25">
-      <animate attributeName="r" values="24;36;24" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.25;0;0.25" dur="3s" repeatCount="indefinite"/>
+    <!-- subtle pulse on center node -->
+    <circle cx="900" cy="290" r="20" fill="none" stroke="#8047CC" stroke-width="1.5" opacity="0.2">
+      <animate attributeName="r" values="20;32;20" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0;0.2" dur="3s" repeatCount="indefinite"/>
     </circle>
-
-    <!-- evidence tag -->
-    <rect x="845" y="295" width="88" height="28" rx="6" fill="#f7f5fb" stroke="#d4cde8"/>
-    <text x="889" y="313" text-anchor="middle" font-size="10" fill="#8047CC" font-weight="500">📖 证据可溯源</text>
   </g>
 
   <text x="800" y="365" text-anchor="middle" font-size="14" font-weight="600" fill="#8047CC" opacity="0.6">知识图谱</text>
