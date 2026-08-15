@@ -1223,7 +1223,7 @@ function LegacyKnowForgeHome({ onEnter }: { onEnter: () => void }) {
           <div className="kf-home-hero-copy">
             <p>PERSONAL KNOWLEDGE HUB</p>
             <h1>把分散资料，重构成能查、能问、能追溯的知识库</h1>
-            <div>KnowForge 接收 PDF、Word、Excel、图片和代码目录，不做逐篇摘要，而是抽取实体与关系建成知识图谱，再按主题写出<strong>每段都标注出处</strong>的知识文档，并可打包授权给 Agent 只读调用。</div>
+            <div>Metask Mind 接收 PDF、Word、Excel、图片和代码目录，不做逐篇摘要，而是抽取实体与关系建成知识图谱，再按主题写出<strong>每段都标注出处</strong>的知识文档，并可打包授权给 Agent 只读调用。</div>
             <button className="kf-home-primary" onClick={onEnter}>进入工作台 <ArrowRight size={16} weight="bold" /></button>
           </div>
 
@@ -1293,7 +1293,7 @@ function KnowForgeLanding({ onEnter }: { onEnter: () => void }) {
           <div className="kf-home-hero-copy">
             <p>KNOWLEDGE, COMPILED</p>
             <h1>把分散资料<br />重构成可信知识</h1>
-            <div>KnowForge 把文档、网页、会议纪要与代码仓库重构为可追溯、可复用、可被 AI 安全调用的长期知识资产。</div>
+            <div>Metask Mind 把文档、网页、会议纪要与代码仓库重构为可追溯、可复用、可被 AI 安全调用的长期知识资产。</div>
             <div className="kf-home-hero-actions">
               <button className="kf-home-primary" onClick={onEnter}>进入工作台<ArrowRight size={16} weight="bold" /></button>
               <a href="#workflow">了解工作方式<ArrowRight size={15} weight="regular" /></a>
@@ -1307,9 +1307,9 @@ function KnowForgeLanding({ onEnter }: { onEnter: () => void }) {
         </section>
 
         <section className="kf-home-statement" id="workflow">
-          <div className="kf-home-statement-top"><span>KNOWFORGE</span><p>让资料从“存过”变成真正能持续使用的知识。</p></div>
+          <div className="kf-home-statement-top"><span>METASK MIND</span><p>让资料从“存过”变成真正能持续使用的知识。</p></div>
           <div className="kf-home-statement-copy"><p>EVIDENCE, NOT MEMORY</p><h2>每条结论<br />都能回到证据现场</h2><div>不是让 AI 凭记忆复述，而是让每段知识保留来源、引用与上下文，随时可以回到原始资料核验。</div></div>
-          <figure className="kf-home-generated-visual kf-home-statement-visual"><img src="/knowledge-graph-process.svg" alt="KnowForge 将原始资料抽取实体与关系，重构成可追溯的知识图谱" /><figcaption><span>KNOWLEDGE GRAPH</span><small>从资料到知识图谱的重构过程</small></figcaption></figure>
+          <figure className="kf-home-generated-visual kf-home-statement-visual"><img src="/knowledge-graph-process.svg" alt="Metask Mind 将原始资料抽取实体与关系，重构成可追溯的知识图谱" /><figcaption><span>KNOWLEDGE GRAPH</span><small>从资料到知识图谱的重构过程</small></figcaption></figure>
           <div className="kf-home-orbit-note"><Sparkle size={17} weight="regular" /><span>此处可补充品牌角色或知识助手插图</span></div>
         </section>
 
@@ -1673,7 +1673,7 @@ export function KnowForgeDemo() {
                 <button className="logout" onClick={() => { setProfileOpen(false); showToast("Demo 中未执行退出登录"); }}><ArrowRight size={19} weight="regular" /><span>退出登录</span></button>
               </nav>
 
-              <footer>KnowForge Demo v0.2.0</footer>
+              <footer>Metask Mind Demo v0.2.0</footer>
             </section>
           )}
 
@@ -1756,7 +1756,7 @@ export function KnowForgeDemo() {
                   <button className="more" onClick={() => showToast("更多操作即将开放")} aria-label="更多操作">⌄</button>
                 </div>
               </div>
-              <p className="lede">{activeLibraryPage?.description ?? "KnowForge 把散落的文档、网页、会议纪要和代码仓库，整理为可追溯、可复用、可被 AI 安全调用的长期知识资产。"}</p>
+              <p className="lede">{activeLibraryPage?.description ?? "Metask Mind 把散落的文档、网页、会议纪要和代码仓库，整理为可追溯、可复用、可被 AI 安全调用的长期知识资产。"}</p>
             </header>
 
             {activeLibraryPage && (
@@ -1831,7 +1831,7 @@ export function KnowForgeDemo() {
 
             <aside className="callout callout-green">
               <span className="callout-icon">✦</span>
-              <div><strong>知识不是文件的堆积。</strong><p>KnowForge 将原始资料视为证据，把重构后的知识页面作为可持续使用的核心资产。</p></div>
+              <div><strong>知识不是文件的堆积。</strong><p>Metask Mind 将原始资料视为证据，把重构后的知识页面作为可持续使用的核心资产。</p></div>
             </aside>
 
             <section className="doc-section" id="pipeline">
@@ -1862,7 +1862,7 @@ export function KnowForgeDemo() {
 
             <section className="doc-section" id="citations">
               <h2><a href="#citations" aria-label="链接到可追溯的证据链">#</a>可追溯的证据链</h2>
-              <p>引用是 KnowForge 的基础能力。搜索结果、AI 回答、图谱关系和知识页面，都能回到原始段落、页码或代码位置。</p>
+              <p>引用是 Metask Mind 的基础能力。搜索结果、AI 回答、图谱关系和知识页面，都能回到原始段落、页码或代码位置。</p>
               <div className="evidence-card">
                 <div className="evidence-head"><span className="file-icon">W</span><div><strong>2019_A公司项目复盘.docx</strong><small>第 8 页 · 项目结果</small></div><em>高置信</em></div>
                 <blockquote>“首期上线后，交付周期由 12 天缩短至 7 天，核心流程完成标准化。”</blockquote>
@@ -1956,9 +1956,9 @@ export function KnowForgeDemo() {
 
             {knowledgeSideTab === "ask" && (
               <form className="knowledge-ask-form" onSubmit={submitQuestion}>
-                <label htmlFor="assistant">向 KnowForge 提问</label>
+                <label htmlFor="assistant">向 Metask Mind 提问</label>
                 <div>
-                  <input id="assistant" value={question} onChange={(e) => setQuestion(e.target.value)} placeholder={currentView === "dashboard" ? "询问全部知识库…" : "询问这套知识库…"} aria-label="向 KnowForge 提问" />
+                  <input id="assistant" value={question} onChange={(e) => setQuestion(e.target.value)} placeholder={currentView === "dashboard" ? "询问全部知识库…" : "询问这套知识库…"} aria-label="向 Metask Mind 提问" />
                   <button disabled={!question.trim()} aria-label="发送问题"><ArrowRight size={16} weight="bold" /></button>
                 </div>
                 <small>{answer
@@ -1994,9 +1994,9 @@ export function KnowForgeDemo() {
 
       {searchOpen && (
         <div className="modal-backdrop" role="presentation" onMouseDown={() => setSearchOpen(false)}>
-          <section className="search-modal" role="dialog" aria-modal="true" aria-label="搜索 KnowForge" onMouseDown={(e) => e.stopPropagation()}>
+          <section className="search-modal" role="dialog" aria-modal="true" aria-label="搜索 Metask Mind" onMouseDown={(e) => e.stopPropagation()}>
             <div className="search-box"><span>⌕</span><input autoFocus placeholder="搜索知识、页面或来源…" /><kbd>ESC</kbd></div>
-            <div className="search-body"><small>快速前往</small>{sections.slice(1).map((section) => <a key={section.id} href={`#${section.id}`} onClick={() => setSearchOpen(false)}><span>⌘</span><div><strong>{section.label}</strong><small>KnowForge 文档</small></div><em>↗</em></a>)}</div>
+            <div className="search-body"><small>快速前往</small>{sections.slice(1).map((section) => <a key={section.id} href={`#${section.id}`} onClick={() => setSearchOpen(false)}><span>⌘</span><div><strong>{section.label}</strong><small>Metask Mind 文档</small></div><em>↗</em></a>)}</div>
           </section>
         </div>
       )}
