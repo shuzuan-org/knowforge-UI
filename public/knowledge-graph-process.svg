@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" fill="none" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf9fc"/>
+      <stop offset="1" stop-color="#f3f1f9"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b6fd6"/>
+      <stop offset="1" stop-color="#8047CC"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <filter id="nodeShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8047CC" opacity="0.5"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="560" rx="16" fill="url(#bg)"/>
+
+  <!-- ===== LEFT: Raw documents ===== -->
+  <g filter="url(#shadow)">
+    <!-- PDF doc -->
+    <rect x="40" y="80" width="120" height="150" rx="8" fill="#fff" stroke="#e0dde8"/>
+    <rect x="56" y="100" width="88" height="8" rx="3" fill="#e85d5d" opacity="0.8"/>
+    <rect x="56" y="120" width="72" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="134" width="80" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="148" width="60" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="162" width="76" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="176" width="50" height="5" rx="2.5" fill="#e8e4ef"/>
+    <text x="100" y="212" text-anchor="middle" font-size="13" font-weight="600" fill="#888">PDF</text>
+
+    <!-- Word doc -->
+    <rect x="100" y="190" width="120" height="150" rx="8" fill="#fff" stroke="#e0dde8"/>
+    <rect x="116" y="210" width="88" height="8" rx="3" fill="#4a72c4" opacity="0.8"/>
+    <rect x="116" y="230" width="72" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="116" y="244" width="80" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="116" y="258" width="60" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="116" y="272" width="76" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="116" y="286" width="50" height="5" rx="2.5" fill="#e8e4ef"/>
+    <text x="160" y="322" text-anchor="middle" font-size="13" font-weight="600" fill="#888">Word</text>
+
+    <!-- Web page -->
+    <rect x="50" y="320" width="120" height="130" rx="8" fill="#fff" stroke="#e0dde8"/>
+    <circle cx="66" cy="338" r="4" fill="#f0ad4e"/>
+    <circle cx="78" cy="338" r="4" fill="#5cb85c"/>
+    <circle cx="90" cy="338" r="4" fill="#d9534f"/>
+    <rect x="56" y="352" width="108" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="366" width="88" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="380" width="96" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="394" width="70" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="56" y="408" width="82" height="5" rx="2.5" fill="#e8e4ef"/>
+    <text x="110" y="434" text-anchor="middle" font-size="13" font-weight="600" fill="#888">Web</text>
+
+    <!-- Code -->
+    <rect x="140" y="370" width="110" height="120" rx="8" fill="#fff" stroke="#e0dde8"/>
+    <rect x="156" y="386" width="78" height="6" rx="3" fill="#3b3b3b" opacity="0.7"/>
+    <rect x="156" y="400" width="60" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="156" y="414" width="70" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="166" y="428" width="56" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="156" y="442" width="64" height="5" rx="2.5" fill="#e8e4ef"/>
+    <rect x="156" y="456" width="40" height="5" rx="2.5" fill="#e8e4ef"/>
+    <text x="195" y="478" text-anchor="middle" font-size="13" font-weight="600" fill="#888">Code</text>
+  </g>
+
+  <text x="145" y="520" text-anchor="middle" font-size="15" font-weight="600" fill="#8047CC" opacity="0.7">原始资料</text>
+
+  <!-- ===== MIDDLE: Extraction arrows ===== -->
+  <g opacity="0.6">
+    <path d="M260,155 C310,155 320,260 370,260" stroke="#8047CC" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)" fill="none"/>
+    <path d="M260,265 C310,265 320,270 370,270" stroke="#8047CC" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)" fill="none"/>
+    <path d="M260,385 C310,385 320,285 370,285" stroke="#8047CC" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)" fill="none"/>
+    <path d="M260,430 C310,430 320,295 370,295" stroke="#8047CC" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)" fill="none"/>
+  </g>
+
+  <!-- Extraction box -->
+  <g filter="url(#shadow)">
+    <rect x="300" y="210" width="110" height="100" rx="12" fill="#fff" stroke="#d4cde8"/>
+    <circle cx="355" cy="245" r="22" fill="url(#nodeGrad)" opacity="0.15"/>
+    <path d="M345,245 L355,238 L365,245 L365,258 L355,265 L345,258 Z" fill="none" stroke="#8047CC" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="355" cy="245" r="4" fill="#8047CC"/>
+    <text x="355" y="293" text-anchor="middle" font-size="12" font-weight="600" fill="#8047CC">抽取实体与关系</text>
+  </g>
+
+  <!-- Arrow to graph -->
+  <g opacity="0.6">
+    <path d="M410,260 C460,260 470,260 510,260" stroke="#8047CC" stroke-width="2.5" marker-end="url(#arrow)" fill="none"/>
+  </g>
+
+  <!-- ===== RIGHT: Knowledge graph ===== -->
+  <g filter="url(#nodeShadow)">
+    <!-- edges -->
+    <line x1="600" y1="160" x2="720" y2="120" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="600" y1="160" x2="580" y2="280" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="720" y1="120" x2="850" y2="180" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="580" y1="280" x2="700" y2="340" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="850" y1="180" x2="950" y2="120" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="850" y1="180" x2="920" y2="300" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="700" y1="340" x2="820" y2="400" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="920" y1="300" x2="820" y2="400" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="580" y1="280" x2="520" y2="380" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="700" y1="340" x2="600" y2="440" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="820" y1="400" x2="960" y2="430" stroke="#c4b8e0" stroke-width="2"/>
+    <line x1="600" y1="160" x2="520" y2="380" stroke="#c4b8e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <line x1="950" y1="120" x2="920" y2="300" stroke="#c4b8e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+    <!-- nodes -->
+    <circle cx="600" cy="160" r="26" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="720" cy="120" r="20" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="850" cy="180" r="28" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="580" cy="280" r="22" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="700" cy="340" r="24" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="950" cy="120" r="18" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="920" cy="300" r="22" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="820" cy="400" r="26" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="520" cy="380" r="18" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="600" cy="440" r="16" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+    <circle cx="960" cy="430" r="14" fill="url(#nodeGrad)" filter="url(#nodeShadow)"/>
+
+    <!-- node labels -->
+    <text x="600" y="165" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">项目</text>
+    <text x="850" y="185" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">客户</text>
+    <text x="700" y="345" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">结论</text>
+    <text x="920" y="305" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">来源</text>
+    <text x="820" y="405" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">事件</text>
+    <text x="580" y="285" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">人</text>
+
+    <!-- evidence link indicators -->
+    <circle cx="850" cy="180" r="6" fill="none" stroke="#8047CC" stroke-width="1.5" opacity="0.4">
+      <animate attributeName="r" values="28;36;28" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="340" r="6" fill="none" stroke="#8047CC" stroke-width="1.5" opacity="0.4">
+      <animate attributeName="r" values="24;32;24" dur="3.5s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="3.5s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- evidence chain annotation -->
+  <g opacity="0.7">
+    <path d="M880,400 C920,420 960,440 970,430" stroke="#8047CC" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+    <rect x="970" y="395" width="80" height="48" rx="6" fill="#fff" stroke="#d4cde8"/>
+    <text x="1010" y="414" text-anchor="middle" font-size="9" fill="#8047CC" font-weight="600">证据链</text>
+    <text x="1010" y="430" text-anchor="middle" font-size="8" fill="#999">原文 · 页码 · 代码行</text>
+  </g>
+
+  <text x="760" y="510" text-anchor="middle" font-size="15" font-weight="600" fill="#8047CC" opacity="0.7">知识图谱</text>
+
+  <!-- Title labels on the flow -->
+  <text x="355" y="200" text-anchor="middle" font-size="11" fill="#aaa" font-weight="500">EXTRACT</text>
+  <text x="460" y="250" text-anchor="middle" font-size="11" fill="#aaa" font-weight="500">LINK</text>
+</svg>

@@ -138,7 +138,7 @@ const libraryGroups: LibraryGroup[] = [
 ];
 
 function BrandMark() {
-  return <span className="brand-mark" aria-hidden="true"><img src="/knowforge-logo.png" alt="" /></span>;
+  return <span className="brand-mark" aria-hidden="true"><img src="/metask-logo.svg" alt="" /></span>;
 }
 
 function LibraryGroupView({ group, onOpenPage }: { group: LibraryGroup; onOpenPage: (page: LibraryPage) => void }) {
@@ -1309,7 +1309,7 @@ function KnowForgeLanding({ onEnter }: { onEnter: () => void }) {
         <section className="kf-home-statement" id="workflow">
           <div className="kf-home-statement-top"><span>KNOWFORGE</span><p>让资料从“存过”变成真正能持续使用的知识。</p></div>
           <div className="kf-home-statement-copy"><p>EVIDENCE, NOT MEMORY</p><h2>每条结论<br />都能回到证据现场</h2><div>不是让 AI 凭记忆复述，而是让每段知识保留来源、引用与上下文，随时可以回到原始资料核验。</div></div>
-          <figure className="kf-home-generated-visual kf-home-statement-visual"><img src="/latest-workflow.png" alt="Metask Mind 最新知识库工作台" /><figcaption><span>KNOWFORGE WORKSPACE</span><small>最新工作台界面</small></figcaption></figure>
+          <figure className="kf-home-generated-visual kf-home-statement-visual"><img src="/knowledge-graph-process.svg" alt="KnowForge 将原始资料抽取实体与关系，重构成可追溯的知识图谱" /><figcaption><span>KNOWLEDGE GRAPH</span><small>从资料到知识图谱的重构过程</small></figcaption></figure>
           <div className="kf-home-orbit-note"><Sparkle size={17} weight="regular" /><span>此处可补充品牌角色或知识助手插图</span></div>
         </section>
 
