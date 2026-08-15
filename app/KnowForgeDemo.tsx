@@ -1301,8 +1301,8 @@ function KnowForgeLanding({ onEnter }: { onEnter: () => void }) {
             <div className="kf-home-formats" aria-label="支持的资料类型"><span>PDF</span><span>Word</span><span>Web</span><span>Markdown</span><span>Repo</span></div>
           </div>
           <div className="kf-home-hero-visual">
-            <figure className="kf-home-product-shot kf-home-product-shot-hero"><img src="/workbench-agents.png" alt="KnowForge 智能体工作台" /><figcaption><span>智能体工作台</span><small>给知识一个明确的整理角色</small></figcaption></figure>
-            <figure className="kf-home-product-shot kf-home-product-shot-demo"><img src="/workbench-import.png" alt="KnowForge 导入资料工作台" /><figcaption><span>导入资料</span><small>从原始资料开始重构</small></figcaption></figure>
+            <figure className="kf-home-product-shot kf-home-product-shot-hero"><img src="/latest-agents.png" alt="Metask Mind 智能体工作台" /><figcaption><span>智能体工作台</span><small>给知识一个明确的整理角色</small></figcaption></figure>
+            <figure className="kf-home-product-shot kf-home-product-shot-demo"><img src="/latest-import.png" alt="Metask Mind 导入资料工作台" /><figcaption><span>导入资料</span><small>从原始资料开始重构</small></figcaption></figure>
           </div>
         </section>
 
@@ -1318,17 +1318,17 @@ function KnowForgeLanding({ onEnter }: { onEnter: () => void }) {
           <article className="kf-home-scenario">
             <div className="kf-home-scenario-copy"><span>01 / 个人长期知识库</span><h3>把二十年的资料，整理成今天仍然可用的知识</h3><p>按项目、客户、决策、时间线与方法论重构资料。每条结论保留出处，每次更新都能延续原有上下文。</p><ul><li><Check size={16} />目录与知识页面自动生成</li><li><Check size={16} />引用、健康度与待确认问题</li></ul></div>
             <figure className="kf-home-generated-visual">
-              <img src="/workbench-dashboard.png" alt="KnowForge 知识库工作台总览" />
+              <img src="/latest-workbench.png" alt="Metask Mind 知识库工作台总览" />
               <figcaption><span>KNOWLEDGE WORKSPACE</span><small>真实工作台总览</small></figcaption>
             </figure>
           </article>
           <article className="kf-home-scenario kf-home-scenario-reverse">
-            <figure className="kf-home-generated-visual"><img src="/workbench-knowledge-relations.png" alt="KnowForge 知识页面与关联面板" /><figcaption><span>RELATIONS</span><small>知识点与图谱关联内容</small></figcaption></figure>
+            <figure className="kf-home-generated-visual"><img src="/latest-relations.png" alt="Metask Mind 知识页面与关联面板" /><figcaption><span>RELATIONS</span><small>知识点与图谱关联内容</small></figcaption></figure>
             <div className="kf-home-scenario-copy"><span>02 / 研究与内容生产</span><h3>不止于总结文档，更能整合证据与观点</h3><p>智能体按研究角色整理行业报告、论文与访谈资料，优先识别核心结论、关键数据、争议观点和待验证问题。</p><ul><li><Check size={16} />跨来源识别同一主题</li><li><Check size={16} />为报告与内容生产保留证据链</li></ul></div>
           </article>
           <article className="kf-home-scenario" id="mcp">
             <div className="kf-home-scenario-copy"><span>03 / AI 与团队交付</span><h3>把可信知识交给 Agent，而不是再复制一遍上下文</h3><p>通过只读 MCP 把检索、溯源和原件下载能力安全交付给 Codex、Claude 或 Cursor，不开放写入与删除权限。</p><ul><li><Check size={16} />Ask、关联与应用在同一上下文工作</li><li><Check size={16} />只读授权与来源级访问控制</li></ul></div>
-            <figure className="kf-home-generated-visual"><img src="/workbench-knowledge-ask.png" alt="KnowForge 知识页面与 Ask 面板" /><figcaption><span>ASK KNOWFORGE</span><small>基于当前知识库与引用回答</small></figcaption></figure>
+            <figure className="kf-home-generated-visual"><img src="/latest-ask.png" alt="Metask Mind 知识页面与 Ask 面板" /><figcaption><span>ASK METASK MIND</span><small>基于当前知识库与引用回答</small></figcaption></figure>
           </article>
         </section>
 
