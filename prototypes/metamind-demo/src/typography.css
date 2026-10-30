@@ -1,0 +1,106 @@
+/* Shared typography from metask-ui-demo. Keep layout and colors in source.css. */
+@import './metask-fonts.css';
+
+:root {
+  --font-inter: 'Inter', 'Inter Fallback';
+  --font-noto-sc: 'Noto Sans SC', 'Noto Sans SC Fallback';
+  --font-sans: var(--font-inter), var(--font-noto-sc);
+  --font-mono: 'IBM Plex Mono', 'IBM Plex Mono Fallback';
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+button { font-weight: 500; }
+b, strong { font-weight: 600; }
+/* Captured rich text contains inline `bolder`, which otherwise resolves to 700. */
+:is(b, strong)[style*='font-weight: bolder'] { font-weight: 600 !important; }
+
+h1, .agents-heading h1, .import-hero h1 {
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -1px;
+}
+h2, .hero-band h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -.4px;
+}
+h3 { font-size: 16px; font-weight: 600; }
+.agents-heading h1 { text-wrap: balance; }
+.panel-title { font-size: 15px; font-weight: 600; }
+.brand-title, .brand strong { font-size: 18px; font-weight: 600; }
+
+.nav { font-size: 14px; font-weight: 500; }
+.nav.active { font-weight: 600; }
+.side-heading, .section-title { font-size: 12px; font-weight: 400; }
+.scope-item { font-size: 13px; font-weight: 500; }
+.scope-item strong { font-weight: inherit; }
+.scope-item.active { font-weight: 600; }
+.tree-item { font-size: 13px; font-weight: 400; }
+.tree-item:is(.is-folder, .is-open, .doc-dir) { font-weight: 500; }
+.scope-meta, .library-item small, .account-trigger-copy small,
+.account-popover-head > div span, .account-balance > div:first-child,
+.account-balance strong { font-size: 12px; font-weight: 400; }
+.breadcrumb { font-size: 12px; font-weight: 500; }
+#statusLine { font-size: 12px; font-weight: 400; }
+
+.primary-button, .secondary-button, .generate-cta,
+.account-menu-actions button, .text-button,
+.agents-tabs button, .agent-actions button,
+.agent-name-tools > button, .agent-editor > footer button,
+.web-url-actions button, .import-new-library-inline button,
+.import-target-new, .import-simple-footer > button {
+  font-size: 13px;
+  font-weight: 500;
+}
+.flow-node button { font-size: 13px; font-weight: 500; }
+.kf-home-enter, .kf-home-primary { font-weight: 500; }
+.kp-tab { font-size: 13px; font-weight: 400; }
+.kp-tab.active { font-weight: 500; }
+.field-label, .form-field span,
+.agent-avatar-upload > span, .agent-name-tools label > span,
+.agent-editor-fields label > span,
+.import-quick-settings-grid label > span,
+.import-new-library-inline label > span, .import-target-field > span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.table th, .file-table th { font-size: 12px; font-weight: 500; }
+.table-link, .table-action { font-weight: 500; }
+.metric-card strong, .kf-metric strong { font-size: 22px; font-weight: 600; }
+.agent-editor-heading h2, .kb-detail-head h2 { font-size: 18px; font-weight: 600; }
+.agent-card h2, .flow-card-head h3 { font-size: 16px; font-weight: 600; }
+.agents-heading p, .agent-card > p, .agent-actions button,
+.source-rank-row, .web-url-panel textarea, .web-url-result,
+.import-simple-source-switch button { font-size: 13px; }
+
+.markdown-body { font-size: 14px; }
+.markdown-body h1 { font-size: 29px; font-weight: 600; }
+.markdown-body h2 { font-size: 18px; font-weight: 600; }
+.markdown-body h3 { font-size: 16px; font-weight: 600; }
+.markdown-body p, .markdown-body li { font-size: 14px; }
+.markdown-body th, .markdown-body td { font-size: 13px; }
+.doc-toc-nav a.doc-toc-l1 { font-size: 13px; }
+.doc-toc-header strong { font-weight: 600; }
+code, pre, kbd, samp, .graph-edge-json, .mcp-config, .kb-file-kind,
+.kf-home-formats span, .kf-home-capability-strip article > small {
+  font-family: var(--font-mono), monospace;
+}
+
+@media (max-width: 600px) {
+  h1, .agents-heading h1, .import-hero h1, .markdown-body h1 { font-size: 25px; }
+}

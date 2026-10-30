@@ -1,3 +1,24 @@
+# KnowForge UI / MetaMind 知识库原型
+
+## 最新 MetaMind demo
+
+当前迭代位于 [`prototypes/metamind-demo`](prototypes/metamind-demo/README.md)，与原有 KnowForge 版本独立。
+
+需要 Node.js 22.13 或更新版本。Windows、macOS 和 Linux 均可预览：
+
+```sh
+cd prototypes/metamind-demo
+node server.mjs
+```
+
+打开 <http://localhost:8767/workspace>。已包含构建文件，直接运行无需安装 npm 依赖；源码修改和测试方法见该目录的说明。
+
+---
+
+## 原有 KnowForge demo
+
+以下保留根目录项目的原有运行说明。
+
 # vinext-starter
 
 A clean full-stack starter running on

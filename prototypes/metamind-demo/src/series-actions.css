@@ -1,0 +1,87 @@
+/* Same-series action affordances. Preserve type, density, routes and state.
+   Plain tabs/segmented choices keep their existing navigation treatment. */
+:is(.mm-app,.mm-dialog) .mm-button-plain:not([aria-pressed]):not(.mm-global-citation){
+ border:1px solid var(--border-strong);
+ border-radius:var(--mm-radius);
+ background:var(--surface);
+ color:var(--text);
+ text-decoration:none;
+ cursor:pointer;
+}
+:is(.mm-app,.mm-dialog) .mm-button-plain:not([aria-pressed]):not(.mm-global-citation):hover:not(:disabled){
+ background:var(--surface-2);
+ border-color:var(--text-muted);
+ color:var(--text-strong);
+}
+:is(.mm-app,.mm-dialog) .mm-button-plain:not([aria-pressed]):not(.mm-global-citation):active:not(:disabled){background:var(--surface-3)}
+:is(.mm-app,.mm-dialog) .mm-button-plain:disabled{cursor:not-allowed}
+
+/* Give disclosure actions the same light edge, retaining their native marker. */
+:is(.mm-app,.mm-dialog) :is(.mm-share-scope,.mm-share-management,.mm-share-connections,.mm-source-agent-info,.mm-generation-sources,.mm-advanced-settings)>summary,
+.mm-example-source-note details>summary,
+.mm-import-page .mm-import-formats summary,
+.mm-dialog .mm-form-stack>details>summary{
+ width:fit-content;max-width:100%;box-sizing:border-box;list-style-position:inside;
+ padding:5px 8px;border:1px solid var(--border-strong);border-radius:var(--mm-radius);
+ background:var(--surface);color:var(--text);cursor:pointer;
+}
+:is(.mm-app,.mm-dialog) :is(.mm-share-scope,.mm-share-management,.mm-share-connections,.mm-source-agent-info,.mm-generation-sources,.mm-advanced-settings)>summary:hover,
+.mm-example-source-note details>summary:hover,
+.mm-import-page .mm-import-formats summary:hover,
+.mm-dialog .mm-form-stack>details>summary:hover{background:var(--surface-2);border-color:var(--text-muted)}
+
+/* A task/status strip contains both labels and actions. Only actions have edges. */
+.mm-app .mm-file-task-strip>button{
+ padding:4px 8px;min-height:32px;border:1px solid var(--border-strong);
+ border-radius:var(--mm-radius);background:var(--surface);color:var(--text);cursor:pointer;
+}
+.mm-app .mm-file-task-strip>button:hover{background:var(--surface-2);border-color:var(--text-muted)}
+.mm-app .mm-file-row-actions{gap:4px}
+.mm-app .mm-knowledge-assistant .mm-question-suggestions button{
+ border:1px solid var(--border-strong);padding-inline:10px;background:var(--surface);
+}
+.mm-app .mm-knowledge-assistant .mm-question-suggestions button:hover{border-color:var(--text-muted);background:var(--surface-2)}
+
+/* Standalone guide CTAs remain distinct from the instructions above them. */
+.mm-app .mm-guide-quick article>a,.mm-app .mm-guide-action{
+ display:inline-flex;align-items:center;justify-content:center;gap:6px;align-self:flex-start;
+ width:fit-content;max-width:100%;box-sizing:border-box;min-height:32px;padding:5px 9px;
+ border:1px solid var(--border-strong);border-radius:var(--mm-radius);
+ background:var(--surface);color:var(--text);text-decoration:none;
+}
+.mm-app .mm-guide-quick article>a:hover,.mm-app .mm-guide-action:hover{
+ background:var(--surface-2);border-color:var(--text-muted);color:var(--text-strong);text-decoration:none;
+}
+
+/* In prose, back links and citations use a visible link cue instead of a box. */
+:is(.mm-app,.mm-dialog) :is(.mm-back-link,.mm-file-manage-link,.mm-files-location>nav>button:not(.mm-files-directory-button),.mm-files-location>a,.mm-no-evidence>a,.mm-guide li a),
+.mm-app .mm-knowledge-assistant .mm-citation,
+.mm-sidebar-bottom>button,.mm-sidebar-bottom>.mm-guide-link{
+ text-decoration-line:underline;text-decoration-color:var(--border-strong);
+ text-decoration-thickness:1px;text-underline-offset:4px;
+}
+:is(.mm-app,.mm-dialog) :is(.mm-back-link,.mm-file-manage-link,.mm-files-location>nav>button:not(.mm-files-directory-button),.mm-files-location>a,.mm-no-evidence>a,.mm-guide li a):hover,
+.mm-app .mm-knowledge-assistant .mm-citation:hover,
+.mm-sidebar-bottom>button:hover,.mm-sidebar-bottom>.mm-guide-link:hover{text-decoration-color:currentColor}
+
+/* The marketing page keeps its composition; secondary CTAs look actionable. */
+.kf-home-current .kf-home-hero-actions>a:not(.kf-home-primary),
+.kf-home-current .kf-home-text-link,
+.kf-home-current .kf-home-steps a{
+ padding:6px 10px;border:1px solid var(--border-strong);border-radius:var(--mm-radius);
+ background:var(--surface);color:var(--text);text-decoration:none;width:fit-content;max-width:100%;box-sizing:border-box;
+}
+.kf-home-current .kf-home-hero-actions>a:not(.kf-home-primary):hover,
+.kf-home-current .kf-home-text-link:hover,
+.kf-home-current .kf-home-steps a:hover{background:var(--surface-2);border-color:var(--text-muted);color:var(--text-strong);text-decoration:none}
+
+@media(max-width:650px){
+ :is(.mm-app,.mm-dialog) .mm-button-plain:not([aria-pressed]):not(.mm-global-citation){min-height:40px}
+ .mm-app .mm-guide-quick article>a,.mm-app .mm-guide-action,.mm-app .mm-file-task-strip>button{min-height:40px}
+ :is(.mm-app,.mm-dialog) :is(.mm-share-scope,.mm-share-management,.mm-share-connections,.mm-source-agent-info,.mm-generation-sources,.mm-advanced-settings)>summary,
+ .mm-example-source-note details>summary,
+.mm-import-page .mm-import-formats summary,.mm-dialog .mm-form-stack>details>summary{min-height:40px;padding-block:8px}
+}
+
+.kf-home-current details a{text-decoration:underline;text-decoration-color:var(--border-strong);text-underline-offset:4px}
+.kf-home-current details a:hover{text-decoration-color:currentColor}

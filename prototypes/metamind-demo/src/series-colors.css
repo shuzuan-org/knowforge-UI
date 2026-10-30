@@ -1,0 +1,114 @@
+/* Same-series color treatment from the local MetaWork demo at :5176.
+   Neutral actions and content; purple is a small navigational accent. */
+:root {
+  --bg: #eaeaef;
+  --surface: #f9f9f7;
+  --surface-2: #f4f4f4;
+  --surface-3: #ededed;
+  --sunken: #e8e8e5;
+  --border: #e6e6e3;
+  --border-soft: #e6e6e3;
+  --border-strong: #c9c9c5;
+  --text: #27272a;
+  --text-strong: #171717;
+  --text-muted: #737371;
+  --text-faint: #989895;
+  --brand: #8a4ed1;
+  --brand-strong: #4b2db5;
+  --brand-ink: #4b4b4b;
+  --brand-soft: #f0eef3;
+  --brand-soft-bd: #e5e1e8;
+  --mm-action-primary: #171717;
+  --mm-action-primary-hover: #000000;
+  --mm-on-action: #f9f9f7;
+  --mm-accent-ink: #8a4ed1;
+  --mm-focus-ring: #a3a3a3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141414;
+    --surface: #181818;
+    --surface-2: #1e1e1e;
+    --surface-3: #2c2c2c;
+    --sunken: #141414;
+    --border: #303030;
+    --border-soft: #303030;
+    --border-strong: #484848;
+    --text: #f3f3f3;
+    --text-strong: #f3f3f3;
+    --text-muted: #aaaaaa;
+    --text-faint: #858585;
+    --brand: #b18bdc;
+    --brand-strong: #c6a0f6;
+    --brand-ink: #b6b6b6;
+    --brand-soft: #29272c;
+    --brand-soft-bd: #403b46;
+    --mm-action-primary: #f1f1f1;
+    --mm-action-primary-hover: #ffffff;
+    --mm-on-action: #141414;
+    --mm-accent-ink: #c6a0f6;
+    --mm-focus-ring: #858585;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #141414;
+  --surface: #181818;
+  --surface-2: #1e1e1e;
+  --surface-3: #2c2c2c;
+  --sunken: #141414;
+  --border: #303030;
+  --border-soft: #303030;
+  --border-strong: #484848;
+  --text: #f3f3f3;
+  --text-strong: #f3f3f3;
+  --text-muted: #aaaaaa;
+  --text-faint: #858585;
+  --brand: #b18bdc;
+  --brand-strong: #c6a0f6;
+  --brand-ink: #b6b6b6;
+  --brand-soft: #29272c;
+  --brand-soft-bd: #403b46;
+  --mm-action-primary: #f1f1f1;
+  --mm-action-primary-hover: #ffffff;
+  --mm-on-action: #141414;
+  --mm-accent-ink: #c6a0f6;
+  --mm-focus-ring: #858585;
+}
+
+.mm-app { --mm-muted: var(--text-muted); }
+.mm-app .mm-button-primary,
+.mm-dialog .mm-button-primary,
+.kf-home-current .kf-home-primary,
+.kf-home-current .kf-home-enter {
+  background: var(--mm-action-primary);
+  border-color: var(--mm-action-primary);
+  color: var(--mm-on-action) !important;
+}
+.mm-app .mm-button-primary:hover,
+.mm-dialog .mm-button-primary:hover,
+.kf-home-current .kf-home-primary:hover,
+.kf-home-current .kf-home-enter:hover {
+  background: var(--mm-action-primary-hover);
+  border-color: var(--mm-action-primary-hover);
+  color: var(--mm-on-action) !important;
+}
+.mm-app .nav-icon { color: var(--text-muted); }
+.mm-app .mm-button-primary .nav-icon { color: inherit; }
+.mm-app input::placeholder,
+.mm-app textarea::placeholder,
+.mm-dialog input::placeholder,
+.mm-dialog textarea::placeholder { color: var(--text-muted); }
+.mm-main-nav a.active { color: var(--text); }
+.mm-main-nav a.active .nav-icon { color: var(--mm-accent-ink); }
+.mm-library-dot { background: var(--text-faint); }
+.mm-account-avatar { background: var(--brand-soft); color: var(--mm-accent-ink); }
+.mm-app input[type="checkbox"],
+.mm-app input[type="radio"],
+.mm-dialog input[type="checkbox"],
+.mm-dialog input[type="radio"] { accent-color: var(--mm-action-primary); }
+.mm-app :focus-visible,
+.mm-dialog :focus-visible,
+.kf-home-current :focus-visible { outline-color: var(--mm-focus-ring); }
+.kf-home-current .kf-home-product-shot figcaption span { color: var(--brand-ink); }

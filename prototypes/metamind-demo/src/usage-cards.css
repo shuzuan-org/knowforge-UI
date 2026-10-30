@@ -1,0 +1,12 @@
+/* One usage-card component across product introduction and library operations. */
+.mm-use-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mm-use-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:22px 20px;border:1px solid var(--border-soft);border-radius:var(--mm-radius-lg);background:var(--surface);transition:border-color 140ms ease}
+.mm-use-card:hover{border-color:var(--brand-soft-bd)}
+.mm-use-card-tag{display:inline-flex;align-items:center;min-height:25px;padding:3px 8px;border-radius:var(--mm-radius-sm);background:var(--brand-soft);color:var(--brand-ink);font-size:12px;font-weight:400;line-height:1.6}
+.mm-use-cards .mm-use-card h3{margin:17px 0 6px;min-height:54px;font-size:16px;font-weight:600;line-height:1.7;letter-spacing:0}
+.mm-use-cards .mm-use-card>p{margin:0 0 24px;min-height:47px;font-size:13px;font-weight:400;line-height:1.8;color:var(--text-muted)}
+.mm-use-card>.mm-button{margin-top:auto;width:100%;min-height:42px;padding:9px 12px;font-family:var(--font-sans),sans-serif;font-size:13px;font-weight:500;line-height:1.6;white-space:normal;color:var(--text-strong);box-shadow:none;letter-spacing:0;text-decoration:none}
+.mm-use-card>.mm-button>span{font-size:16px;font-weight:400;line-height:1}.mm-use-card>.mm-button:active{transform:none}
+.mm-library-usage{padding:14px 0 24px}.mm-library-view .mm-library-usage>h2{margin-bottom:22px}
+@media(max-width:760px){.mm-use-cards{grid-template-columns:1fr;gap:14px}.mm-use-card{padding:20px}.mm-use-cards .mm-use-card h3{min-height:0;margin-top:14px}.mm-use-cards .mm-use-card>p{min-height:0;margin-bottom:20px}.mm-use-card>.mm-button{min-height:44px}.mm-library-usage{padding-top:10px}.mm-library-view .mm-library-usage>h2{margin-bottom:18px}}
+@media(prefers-reduced-motion:reduce){.mm-use-card{transition:none}}
