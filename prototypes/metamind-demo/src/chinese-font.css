@@ -1,0 +1,32 @@
+/* MiSans by Xiaomi. Official unmodified fonts and license: /fonts/misans/. */
+@font-face {
+  font-family: 'MiSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/misans/MiSans-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MiSans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/misans/MiSans-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MiSans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/misans/MiSans-Semibold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MiSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/misans/MiSans-Bold.woff2') format('woff2');
+}
+
+/* Match the Metask workspace: one MiSans face for UI Chinese, Latin and numerals. */
+:root{--font-sans:'MiSans',var(--font-noto-sc)}

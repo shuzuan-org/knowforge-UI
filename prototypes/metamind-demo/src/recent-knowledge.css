@@ -1,0 +1,35 @@
+/* Recent reading is a quiet second level, separate from the full catalogue. */
+.mm-recent-nav .mm-recent-library{min-width:0}
+.mm-recent-library-row{display:flex;align-items:center;min-width:0;gap:0;padding-left:4px}
+.mm-app .mm-recent-nav .mm-recent-library-link{flex:1;min-width:0;min-height:32px;padding:5px 8px;font-size:13px;font-weight:400}
+.mm-recent-library-link>span,.mm-recent-page>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mm-app .mm-recent-nav .mm-recent-library-link[aria-current=location]{color:var(--text-strong);font-weight:500}
+.mm-app .mm-recent-nav .mm-recent-library-link[aria-current=location]{background:var(--surface-3)}
+.mm-recent-library-link,.mm-recent-page{transition:background-color 160ms ease,color 160ms ease}
+.mm-app .mm-recent-expand{display:inline-flex;align-items:center;justify-content:center;flex:none;width:24px;height:32px;min-height:32px;padding:0;border:0;border-radius:var(--mm-radius);background:transparent;color:var(--text-muted);cursor:pointer}
+.mm-app .mm-recent-expand:hover{background:var(--surface-3);color:var(--text-strong)}
+.mm-recent-expand svg{transition:transform 180ms cubic-bezier(.22,1,.36,1)}
+.mm-recent-expand[aria-expanded=true] svg{transform:rotate(90deg)}
+.mm-recent-expand-placeholder{width:24px;height:32px;display:inline-flex;align-items:center;justify-content:center;flex:none;color:var(--text-muted)}
+.mm-recent-pages{list-style:none;margin:0 0 6px 16px;padding:0 0 0 11px;border-left:1px solid var(--border-soft);min-width:0}
+.mm-recent-pages[hidden]{display:none}
+.mm-app .mm-recent-nav .mm-recent-page{min-height:34px;padding:6px 8px;gap:7px;font-size:13px;font-weight:400;line-height:1.6}
+.mm-recent-page svg{flex:none;color:var(--text-muted)}
+.mm-app .mm-recent-nav .mm-recent-page[aria-current=page]{background:var(--brand-soft);color:var(--text-strong);font-weight:500}
+@media(max-width:900px){.mm-app .mm-main-nav a{min-height:44px;padding:10px 12px}.mm-app .mm-recent-expand,.mm-recent-expand-placeholder{width:32px;height:40px}.mm-app .mm-recent-nav .mm-recent-library-link{min-height:40px;padding:9px 8px}.mm-app .mm-recent-nav .mm-recent-page{min-height:40px}.mm-recent-pages{margin-left:20px;padding-left:15px}}
+@media(prefers-reduced-motion:reduce){.mm-recent-expand svg,.mm-recent-library-link,.mm-recent-page{transition:none}}
+
+/* The shell and account area stay still; only recent reading scrolls. */
+.mm-recent-nav{--mm-recent-scroll-thumb:color-mix(in srgb,var(--text-muted) 8%,transparent)}
+.mm-recent-nav:hover{--mm-recent-scroll-thumb:color-mix(in srgb,var(--text-muted) 16%,transparent)}
+.mm-app>.mm-sidebar{overflow:hidden}
+.mm-sidebar>.mm-logo,.mm-sidebar>.mm-main-nav,.mm-sidebar>.mm-nav-label,.mm-sidebar>.mm-sidebar-bottom,
+.mm-mobile-nav>.mm-logo,.mm-mobile-nav>.mm-main-nav,.mm-mobile-nav>.mm-nav-label,.mm-mobile-nav>.mm-sidebar-bottom{flex-shrink:0}
+.mm-app:not(.mm-nav-collapsed)>.mm-sidebar>.mm-recent-nav,.mm-mobile-nav>.mm-recent-nav{flex:1 1 0;min-height:0;overflow-y:auto;overflow-x:hidden;align-content:start;grid-auto-rows:max-content;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--mm-recent-scroll-thumb) transparent}
+.mm-sidebar>.mm-recent-nav::-webkit-scrollbar,.mm-mobile-nav>.mm-recent-nav::-webkit-scrollbar{width:3px;height:3px}
+.mm-sidebar>.mm-recent-nav::-webkit-scrollbar-track,.mm-mobile-nav>.mm-recent-nav::-webkit-scrollbar-track{background:transparent}
+.mm-sidebar>.mm-recent-nav::-webkit-scrollbar-thumb,.mm-mobile-nav>.mm-recent-nav::-webkit-scrollbar-thumb{background:var(--mm-recent-scroll-thumb);border-radius:3px}
+@supports selector(::-webkit-scrollbar){.mm-app:not(.mm-nav-collapsed)>.mm-sidebar>.mm-recent-nav,.mm-mobile-nav>.mm-recent-nav{scrollbar-width:auto;scrollbar-color:auto}}
+.mm-dialog[open]:has(>.mm-mobile-nav){display:flex;flex-direction:column;height:calc(100dvh - 24px);overflow:hidden}
+.mm-dialog>.mm-mobile-nav{flex:1;min-height:0;overflow:hidden}
+@media(max-width:900px) and (max-height:650px){.mm-dialog>.mm-mobile-nav{padding:12px}.mm-mobile-nav>.mm-logo{margin-bottom:12px}.mm-mobile-nav>.mm-nav-label{margin-top:12px}.mm-mobile-nav>.mm-sidebar-bottom{padding-top:12px;gap:6px}}

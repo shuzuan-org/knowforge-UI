@@ -1,0 +1,21 @@
+/* Shared form focus: one neutral border, without an outer ring or glow.
+   Scope this above widget rules; leave navigation/buttons/checkboxes intact. */
+:root :is(.mm-app, .mm-dialog) :is(
+  input:not([type="checkbox"], [type="radio"], [type="range"], [type="color"], [type="file"], [type="button"], [type="submit"], [type="reset"], [type="hidden"], [type="image"]),
+  textarea,
+  select,
+  [role="combobox"]
+):focus {
+  border-color: var(--text-muted);
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+/* Search fields and library Ask use a bordered wrapper and a borderless input. */
+:root :is(.mm-app, .mm-dialog) :is(.mm-search, .mm-composer):focus-within {
+  border-color: var(--text-muted);
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}

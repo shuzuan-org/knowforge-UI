@@ -1,0 +1,39 @@
+/* Icons share one 24-unit outline and never change the text hierarchy. */
+.mm-action-icon{display:inline-block;width:var(--mm-icon-size,16px);height:var(--mm-icon-size,16px);flex:none;vertical-align:-3px;pointer-events:none;color:inherit}
+:is(.mm-app,.mm-dialog,.kf-home-current) .mm-action-simple{display:inline-flex;align-items:center;column-gap:6px}
+.mm-action-control :is(strong,h3,h4)>.mm-action-icon{margin-inline-end:6px}
+.mm-action-control>svg:not(.mm-action-icon){flex:none}
+.mm-action-control:is(summary){list-style:none}
+.mm-action-control:is(summary)::-webkit-details-marker{display:none}
+.mm-app .nav-icon.mm-line-icon{width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;background:none;border-radius:0}
+.mm-app .nav-icon.mm-line-icon::before,.mm-app .nav-icon.mm-line-icon::after{content:none}
+.mm-line-icon .mm-action-icon{--mm-icon-size:18px}
+.mm-action-control .mm-line-icon,.mm-action-control .mm-line-icon .mm-action-icon{width:16px;height:16px}
+.mm-action-control:not(.mm-sidebar-collapse)>svg:not(.mm-action-icon){width:16px;height:16px}
+.mm-app .mm-main-nav .mm-line-icon{color:inherit}
+.mm-app .mm-reader-mcp .mm-action-icon{color:inherit}
+.mm-app .mm-import-settings>summary.mm-action-control{display:flex}
+.mm-import-settings-toggle{display:inline-flex;align-items:center;gap:6px}
+.mm-app .mm-import-page .mm-import-settings>summary>.mm-import-settings-toggle::after{content:none}
+.mm-import-settings[open] .mm-import-settings-toggle .mm-action-icon{transform:rotate(180deg)}
+.mm-app .mm-sidebar-bottom>button.mm-action-control{display:inline-flex;align-self:flex-start;gap:6px}
+.mm-app .mm-account-trigger.mm-action-control{display:grid}
+.mm-app .mm-account-actions>.mm-action-control{gap:6px}
+.mm-ownership-tabs .mm-ownership-label{display:inline-flex;align-items:center;gap:6px}
+.mm-app .mm-button.mm-close{padding:0}
+.kf-home-current .mm-action-control .mm-action-icon{color:inherit}
+.mm-app .mm-library-tabs{overflow-x:auto}
+.mm-app .mm-library-tabs>button{flex:none;white-space:nowrap}
+.mm-app .mm-view-switch>button.mm-action-control{display:inline-flex;align-items:center;gap:5px}
+.mm-app .mm-library-catalog-row strong>.mm-action-icon{margin-inline-end:6px}
+.mm-app .mm-import-destination-trigger.mm-action-control{display:block}
+.kf-home-current .kf-home-enter.mm-action-control{display:inline-flex;align-items:center;gap:6px}
+@media(max-width:650px){
+ .mm-app .mm-ownership-tabs{gap:14px;overflow-x:auto;flex:none}
+ .mm-app .mm-ownership-tabs>button{flex:none}
+ .mm-app .mm-library-tabs{gap:20px}
+ .mm-app .mm-reader-panel-buttons{flex-wrap:wrap}
+ .mm-app .mm-knowledge-assistant-heading>div{flex-wrap:wrap;gap:4px}
+ .mm-app .mm-file-row-actions{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){.mm-import-settings-toggle .mm-action-icon{transition:none}}

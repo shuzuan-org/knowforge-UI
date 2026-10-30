@@ -1,0 +1,13 @@
+/* Typography reference: local Metask workspace at :4176/app/studio.
+   Its knowledge-page title is 29px/500; ordinary labels are 400, active 500.
+   Preserve existing type sizes, line heights, page geometry and code font. */
+:root :is(.mm-app,.mm-dialog,.kf-home-current) :is(h1,h2,h3,h4,h5,h6,strong,b){font-weight:500}
+
+/* Secondary utilities should read lighter than primary task actions. */
+:root :is(.mm-app,.mm-dialog) .mm-button:not(.mm-button-primary):not(.mm-button-danger):not(.active):not([aria-selected=true]):not([aria-pressed=true]){font-weight:400}
+:root .mm-sidebar-bottom .mm-guide-link[aria-current=page]{font-weight:500}
+.mm-nav-label{letter-spacing:.5px}
+:root[data-theme=light] .mm-main-nav a:not(.active){color:#595959}
+
+/* Retain semantic emphasis within authored knowledge, distinct from UI labels. */
+:root .mm-app .mm-article :is(strong,b){font-weight:600}
