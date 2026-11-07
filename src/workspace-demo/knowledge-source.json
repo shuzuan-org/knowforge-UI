@@ -1,0 +1,65 @@
+[
+  {
+    "libraryId": "entity_scope:e3dafa41529c44c6b3c75ee7c71e4e51",
+    "contentUrl": "/knowledge-content/e3dafa41529c44c6b3c75ee7c71e4e51.json",
+    "filesUrl": "/knowledge-files/e3dafa41529c44c6b3c75ee7c71e4e51.json",
+    "contentBytes": 2906627,
+    "contents": 39
+  },
+  {
+    "libraryId": "entity_scope:a63f9f1519b0439790c0e149f895420b",
+    "contentUrl": "/knowledge-content/a63f9f1519b0439790c0e149f895420b.json",
+    "filesUrl": "/knowledge-files/a63f9f1519b0439790c0e149f895420b.json",
+    "contentBytes": 1750976,
+    "contents": 17
+  },
+  {
+    "libraryId": "entity_scope:9132f7ef434144329ad5d1e8abef587c",
+    "contentUrl": "/knowledge-content/9132f7ef434144329ad5d1e8abef587c.json",
+    "filesUrl": "/knowledge-files/9132f7ef434144329ad5d1e8abef587c.json",
+    "contentBytes": 1703050,
+    "contents": 19
+  },
+  {
+    "libraryId": "entity_scope:626506d317e2492594d946c9a7c4c8b8",
+    "contentUrl": "/knowledge-content/626506d317e2492594d946c9a7c4c8b8.json",
+    "filesUrl": "/knowledge-files/626506d317e2492594d946c9a7c4c8b8.json",
+    "contentBytes": 0,
+    "contents": 0
+  },
+  {
+    "libraryId": "entity_scope:efa2dbc8e908433e94fade0083e4cc14",
+    "contentUrl": "/knowledge-content/efa2dbc8e908433e94fade0083e4cc14.json",
+    "filesUrl": "/knowledge-files/efa2dbc8e908433e94fade0083e4cc14.json",
+    "contentBytes": 497232,
+    "contents": 9
+  },
+  {
+    "libraryId": "entity_scope:beffcb133c1d403a8baa671c5180d8d6",
+    "contentUrl": "/knowledge-content/beffcb133c1d403a8baa671c5180d8d6.json",
+    "filesUrl": "/knowledge-files/beffcb133c1d403a8baa671c5180d8d6.json",
+    "contentBytes": 944545,
+    "contents": 12
+  },
+  {
+    "libraryId": "entity_scope:854082b7af164c6b84a0d77072c53ace",
+    "contentUrl": "/knowledge-content/854082b7af164c6b84a0d77072c53ace.json",
+    "filesUrl": "/knowledge-files/854082b7af164c6b84a0d77072c53ace.json",
+    "contentBytes": 775870,
+    "contents": 12
+  },
+  {
+    "libraryId": "entity_scope:ae173548846d4d67aaee1fd5e1753fe4",
+    "contentUrl": "/knowledge-content/ae173548846d4d67aaee1fd5e1753fe4.json",
+    "filesUrl": "/knowledge-files/ae173548846d4d67aaee1fd5e1753fe4.json",
+    "contentBytes": 1209449,
+    "contents": 22
+  },
+  {
+    "libraryId": "entity_scope:15859e4b41de4ff49e9570f5f34cf1be",
+    "contentUrl": "/knowledge-content/15859e4b41de4ff49e9570f5f34cf1be.json",
+    "filesUrl": "/knowledge-files/15859e4b41de4ff49e9570f5f34cf1be.json",
+    "contentBytes": 0,
+    "contents": 0
+  }
+]

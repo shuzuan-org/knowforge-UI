@@ -1,0 +1,13 @@
+/* A dialog action shares the entry row without becoming a content tab. */
+.mm-app .mm-library-tabbar{display:flex;align-items:center;gap:24px;min-width:0;max-width:100%;flex:none;border-bottom:1px solid var(--border-soft);overflow-x:auto;scrollbar-width:none}
+.mm-library-tabbar::-webkit-scrollbar{display:none}
+.mm-app .mm-library-tabbar>.mm-library-tabs{display:contents;border:0}
+.mm-library-tabbar>.mm-library-tabs>button{flex:none}
+.mm-app .mm-library-tabbar>.mm-library-share{order:2;flex:none;min-height:44px;padding:12px 0;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;color:var(--mm-muted);font-size:14px;font-weight:400;line-height:1.6;white-space:nowrap;cursor:pointer;transition:color 160ms ease}
+.mm-app .mm-library-tabbar>.mm-library-share:hover:not(:disabled){color:var(--text-strong)}
+@media(max-width:650px){
+ .mm-app .mm-library-tabbar{gap:20px}
+}
+@media(prefers-reduced-motion:reduce){.mm-app .mm-library-tabbar>.mm-library-share{transition:none}}
+
+.mm-app .mm-library-tabbar>.mm-library-share:disabled{opacity:.45;cursor:not-allowed}

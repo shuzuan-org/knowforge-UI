@@ -1,0 +1,54 @@
+.kb-materials{min-width:0;container-type:inline-size}
+.kb-materials-header,.kb-materials-tools{display:flex;align-items:center;gap:12px}
+.kb-materials-header{justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
+.kb-materials-header .kb-hub-content-title{margin:0}
+.kb-materials-tools{max-width:100%}
+.kb-materials-search{display:flex;align-items:center;gap:9px;min-width:0;width:240px;min-height:36px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--muted);font-size:13px;--uw-field-focus:transparent}
+.kb-materials-search:focus-within{background:#f6f6f6}
+.kb-materials-search svg{flex:none}
+.kb-materials-search input{min-width:0;width:100%;padding:0;border:0;background:transparent;color:var(--text);font:inherit}
+.kb-workspace .kb-materials .kb-material-upload{border-radius:999px}
+.kb-materials-filters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.kb-materials-filters button{padding:6px 14px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:13px;cursor:pointer}
+.kb-materials-filters button:is(:hover,[aria-pressed=true]),.uw-app .kb-materials-filters button:focus-visible{outline:none;background:var(--panel-2);color:var(--text)}
+.kb-materials-list{width:100%;border-collapse:collapse;table-layout:fixed;text-align:left}
+.kb-material-source-col{width:24%}
+.kb-material-time-col{width:21%}
+.kb-material-action-col{width:44px}
+.kb-materials-list :is(th,td){padding:8px 8px;border-bottom:1px solid var(--line);color:var(--muted);font-size:13px}
+.kb-materials-list thead th{background:transparent;font-weight:400}
+.kb-materials-list td{height:50px;padding-block:5px}
+.kb-materials-list td:last-child{padding:0;text-align:center}
+.kb-materials-list tbody tr:hover{background:var(--panel-2)}
+.kb-material-info{display:flex;align-items:center;gap:10px;min-width:0}
+.kb-material-icon{display:grid;place-items:center;width:32px;height:32px;flex:none;border:1px solid var(--line);border-radius:9px;color:var(--text-2)}
+.kb-material-name{display:grid;min-width:0}
+.kb-material-name :is(strong,button,small),.kb-material-source>span:not(.sr-only){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.kb-material-name :is(strong,button){font-size:14px;font-weight:400;color:var(--text)}
+.kb-material-name button{padding:0;border:0;background:transparent;text-align:left;cursor:pointer}
+.kb-material-name button:hover{text-decoration:underline;text-underline-offset:3px}
+.kb-material-name small{color:var(--muted);font-size:11px}
+.kb-material-star{flex:none;color:var(--text-2)}
+.kb-material-source{display:inline-flex;align-items:center;gap:4px;max-width:100%;color:inherit;text-decoration:none}
+.kb-material-source:hover{text-decoration:underline;text-underline-offset:2px}
+.kb-material-source svg{flex:none}
+.uw-app :is(.kb-material-name button,.kb-material-source):focus-visible{outline:none;text-decoration:underline;text-underline-offset:3px}
+.kb-materials-list time{font-variant-numeric:tabular-nums}
+.kb-materials-empty{display:grid;justify-items:center;gap:10px;padding:56px 16px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:13px}
+.kb-materials-empty strong{color:var(--text);font-weight:500;font-size:15px}
+.uw-material-reply{max-width:100%;overflow-wrap:anywhere;font-size:14px;line-height:1.6}
+@container (max-width: 500px){
+  .kb-materials-tools{flex-basis:100%}
+  .kb-materials-search{flex:1}
+  .kb-material-source-col{width:22%}
+  .kb-material-time-col{width:23%}
+  .kb-material-action-col{width:34px}
+  .kb-materials-list :is(th,td){padding-inline:4px;font-size:12px}
+  .kb-material-info{gap:6px}
+  .kb-material-icon{width:26px;height:26px}
+  .kb-materials-list time{display:block;white-space:normal;overflow-wrap:anywhere}
+  .kb-material-name :is(strong,button){font-size:13px}
+}
+@media(forced-colors:active){
+  .uw-app .kb-materials-filters button:is(:focus-visible,[aria-pressed=true]),.kb-materials-search:focus-within,.uw-app :is(.kb-material-name button,.kb-material-source):focus-visible{outline:1px solid Highlight;outline-offset:-1px}
+}

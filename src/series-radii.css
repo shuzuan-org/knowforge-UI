@@ -1,0 +1,22 @@
+/* Same-series corner scale. Only border radius is defined here.
+   4/6: small markers and labels; 8: controls; 12: content; 16: large surfaces.
+   Circles, progress tracks and deliberately flat views retain their geometry. */
+:root {
+  --mm-radius-xs: 4px;
+  --mm-radius-sm: 6px;
+  --mm-radius: 8px;
+  --mm-radius-lg: 12px;
+  --mm-radius-xl: 16px;
+}
+
+/* Current marketing elements that still inherit their shape from the mirror. */
+.kf-home-current .kf-home-ghost,
+.kf-home-current .kf-home-product-shot figcaption,
+.kf-home-current .kf-home-generated-visual figcaption,
+.kf-home-current .kf-home-capability-strip article > div,
+.mm-app .nav-icon {
+  border-radius: var(--mm-radius);
+}
+.kf-home-current .kf-home-statement-visual {
+  border-radius: var(--mm-radius-xl);
+}

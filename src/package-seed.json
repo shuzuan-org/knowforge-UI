@@ -1,0 +1,92 @@
+[
+  {
+    "id": "resource_package:702f6841d7d24dc8bf7554f06742a0cc",
+    "name": "metask视觉",
+    "description": "Metask 品牌与界面设计规范",
+    "libraryIds": [
+      "entity_scope:e3dafa41529c44c6b3c75ee7c71e4e51"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:0adb017299d9425d9318d3538cd6d791",
+    "name": "metask——视觉",
+    "description": "Metask 界面设计参考",
+    "libraryIds": [
+      "entity_scope:9132f7ef434144329ad5d1e8abef587c"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:45b05e30e1c2422098b81c939b6806d6",
+    "name": "knowforge",
+    "description": "知识库产品与实现资料",
+    "libraryIds": [
+      "entity_scope:a63f9f1519b0439790c0e149f895420b"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:74daf677a52d47c58f03d7c2717447fe",
+    "name": "品牌VI",
+    "description": "品牌识别与应用规范",
+    "libraryIds": [
+      "entity_scope:626506d317e2492594d946c9a7c4c8b8"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:839790a728dc43819cc56fdb9196353c",
+    "name": "色彩",
+    "description": "色彩理论与配色参考",
+    "libraryIds": [
+      "entity_scope:efa2dbc8e908433e94fade0083e4cc14"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:58654b5a95f64c4ebe8221d76bf0119a",
+    "name": "电影运镜",
+    "description": "电影镜头与运镜资料",
+    "libraryIds": [
+      "entity_scope:beffcb133c1d403a8baa671c5180d8d6"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:f99c224e1918460e9d65b6a704013503",
+    "name": "我的叔叔唐吉坷德",
+    "description": "小说阅读与研究资料",
+    "libraryIds": [
+      "entity_scope:854082b7af164c6b84a0d77072c53ace"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:bf0ea3922e0148b29d55b929659c8897",
+    "name": "历史",
+    "description": "历史资料与时间线",
+    "libraryIds": [
+      "entity_scope:ae173548846d4d67aaee1fd5e1753fe4"
+    ],
+    "enabled": true,
+    "example": true
+  },
+  {
+    "id": "resource_package:51013783b80c4e43818f1efac3ef75e2",
+    "name": "我的收藏",
+    "description": "收藏的资料与阅读记录",
+    "libraryIds": [
+      "entity_scope:15859e4b41de4ff49e9570f5f34cf1be"
+    ],
+    "enabled": true,
+    "example": true
+  }
+]

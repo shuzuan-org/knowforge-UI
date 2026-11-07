@@ -1,0 +1,24 @@
+/* Navigation hierarchy: regular labels 400, selected labels 500. */
+.mm-app .mm-main-nav a,
+.mm-app .mm-workspace-mode-tabs>button,
+.mm-app .mm-ownership-tabs>button,
+.mm-app .mm-library-tabs>button,
+:is(.mm-app,.mm-dialog) .mm-advanced-tabs .mm-button,
+:is(.mm-app,.mm-dialog) .mm-feature-tabs .mm-button,
+.mm-app .mm-import-page .mm-import-source-tabs .mm-button,
+.mm-app .mm-knowledge-scope button,
+.mm-app .mm-view-switch button,
+.mm-app :is(.mm-file-directory-all,.mm-file-library-button)>span:not(.nav-icon),
+.mm-app .mm-guide-nav a,
+:root .kf-home-current .kf-home-nav a{font-weight:400}
+
+.mm-app .mm-main-nav a.active,
+.mm-app .mm-workspace-mode-tabs>button[aria-selected=true],
+.mm-app .mm-ownership-tabs>button.active,
+.mm-app .mm-library-tabs>button[aria-selected=true],
+:is(.mm-app,.mm-dialog) .mm-advanced-tabs .mm-button.active,
+:is(.mm-app,.mm-dialog) .mm-feature-tabs .mm-button[aria-pressed=true],
+.mm-app .mm-import-page .mm-import-source-tabs .mm-button.active,
+.mm-app .mm-knowledge-scope button[aria-pressed=true],
+.mm-app .mm-view-switch button[aria-pressed=true],
+.mm-app :is(.mm-file-directory-all,.mm-file-library-button).active>span:not(.nav-icon){font-weight:500}

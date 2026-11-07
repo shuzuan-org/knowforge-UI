@@ -1,0 +1,15 @@
+.kb-files-outline .kb-file-outline-folder{
+  display:flex;align-items:center;gap:10px;min-height:36px;padding:6px;
+  border-radius:6px;font-size:14px;line-height:1.55;color:var(--text);cursor:pointer;overflow-wrap:anywhere
+}
+.kb-file-outline-folder::-webkit-details-marker{display:none}
+.kb-file-outline-folder>svg{flex-shrink:0;color:var(--muted)}
+.kb-file-outline-branch details:not([open])>summary>svg{transform:rotate(-90deg)}
+.kb-file-outline-folder:hover{background:var(--panel-2)}
+.kb-file-outline-folder:focus-visible{outline:2px solid var(--brand-deep);outline-offset:-2px}
+.kb-file-outline-row .kb-wiki-outline-name{display:flex;align-items:center;gap:8px}
+.kb-file-type-icon{display:inline-flex;flex:none;color:var(--muted)}
+.kb-file-outline-name{min-width:0}
+@media(max-width:767px){
+  .kb-file-outline-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+}

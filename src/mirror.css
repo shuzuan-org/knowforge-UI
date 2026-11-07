@@ -1,0 +1,13 @@
+@import './source.css';
+@import './typography.css';
+[hidden] { display: none !important; }
+.mirror-toast { position: fixed; z-index: 10000; bottom: 24px; left: 50%; transform: translateX(-50%); max-width: min(620px, 90vw); padding: 12px 20px; background: var(--text-strong); color: var(--surface); border-radius: 9px; box-shadow: 0 4px 24px #0002; font-size: 13px; }
+.mirror-user-turn { background: var(--brand-soft); border-radius: 8px; padding: 10px 12px; margin: 8px 0; }
+.local-attachment-note { display: block; color: var(--text-faint); font-size: 12px; margin: 12px 0; }
+.mirror-ask-max .workspace { grid-template-columns: 1fr !important; }
+.mirror-ask-max .main-panel, .mirror-ask-max .doc-toc-panel { display: none !important; }
+.mirror-focus .sidebar, .mirror-focus .right-panel { display: none !important; }
+.mirror-focus .app-shell { grid-template-columns: 1fr; }
+.mirror-focus .workspace { grid-template-columns: 220px minmax(0, 1fr) !important; }
+#graphBoard svg { touch-action: none; cursor: grab; }
+#graphBoard svg:active { cursor: grabbing; }

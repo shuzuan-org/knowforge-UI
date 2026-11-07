@@ -1,0 +1,174 @@
+.kb-wiki-drawer.uw-chat-materials-drawer { width: min(760px, 100%); }
+.uw-chat-materials-header-actions { display: flex; align-items: center; gap: 8px; }
+.uw-chat-materials-header-actions a { text-decoration: none; }
+.uw-chat-materials-body { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 0 32px 24px; }
+.uw-chat-materials-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 0 32px 14px; }
+.uw-chat-materials-scopes { display: flex; flex-wrap: wrap; gap: 3px; margin-right: auto; }
+.uw-chat-materials-scopes button, .uw-chat-materials-action, .uw-chat-materials-empty button {
+  min-height: 32px;
+  padding: 5px 9px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.uw-chat-materials-scopes button:hover, .uw-chat-materials-action:hover:not(:disabled) { background: var(--panel-2); }
+.uw-chat-materials-scopes button[aria-pressed="true"], .uw-chat-materials-toolbar .uw-chat-materials-action[aria-pressed="true"] { background: var(--brand-soft); color: var(--text); }
+.uw-chat-materials-search, .uw-app .uw-chat-materials-type {
+  min-height: 34px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--panel);
+  color: var(--text-2);
+  font: inherit;
+  font-size: 12px;
+}
+.uw-chat-materials-search { display: flex; align-items: center; gap: 7px; flex: 0 1 160px; min-width: 0; }
+.uw-chat-materials-search svg { flex: none; }
+.uw-chat-materials-search input { width: 100%; min-width: 0; border: 0; background: transparent; font: inherit; color: var(--text); }
+.uw-chat-materials-search:focus-within,
+.uw-app .uw-chat-materials-type:focus {
+  border-color: var(--line);
+  background-color: var(--panel-2);
+  outline: none;
+  box-shadow: none;
+}
+.uw-chat-materials-search input:focus { outline: none; box-shadow: none; }
+@media (forced-colors: active) {
+  .uw-chat-materials-search:focus-within,
+  .uw-app .uw-chat-materials-type:focus { outline: 1px solid Highlight; outline-offset: -1px; }
+}
+.uw-chat-materials-batch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 32px 8px;
+  padding: 4px 8px;
+  border-radius: 7px;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 12px;
+}
+.uw-chat-materials-batch > span { margin-inline-end: auto; }
+.uw-chat-materials-batch .uw-chat-materials-action:hover:not(:disabled) { background: var(--panel); }
+.uw-chat-materials-checkbox {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  margin: 0;
+  accent-color: var(--brand-deep);
+  cursor: pointer;
+}
+.uw-chat-materials-list { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0; text-align: left; }
+.uw-chat-materials-list th, .uw-chat-materials-list td { padding: 9px 8px; border-bottom: 1px solid var(--line); font-size: 12px; }
+.uw-chat-materials-list th { position: sticky; top: 0; z-index: 1; background: var(--panel); color: var(--muted); font-weight: 400; }
+.uw-chat-materials-list tbody tr:hover { background: var(--panel-2); }
+.uw-chat-materials-list th:first-child { width: 32.5%; }
+.uw-chat-materials-date { font-variant-numeric: tabular-nums; }
+.uw-chat-materials-list th.uw-chat-materials-operations { width: 240px; padding-inline-start: 12px; }
+.uw-chat-materials-list td.uw-chat-materials-source, .uw-chat-materials-list td.uw-chat-materials-date,
+.uw-chat-materials-file > span, .uw-chat-materials-status { color: var(--muted); }
+.uw-chat-materials-name { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.uw-chat-materials-icon { display: grid; place-items: center; width: 30px; height: 30px; flex: none; border-radius: 7px; background: var(--panel-2); color: var(--text-2); }
+.uw-chat-materials-icon[data-kind="document"] { background: var(--brand-soft); color: var(--brand-deep); }
+.uw-chat-materials-icon[data-kind="image"] { background: #e7f3ee; color: #28725c; }
+.uw-chat-materials-icon[data-kind="video"] { background: #e9f0fa; color: #3d6796; }
+.uw-chat-materials-file { display: grid; gap: 2px; min-width: 0; }
+.uw-chat-materials-file strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; font-weight: 500; }
+.uw-chat-materials-file > span, .uw-chat-materials-status { font-size: 12px; }
+.uw-chat-materials-narrow-meta { display: none; }
+.uw-chat-materials-actions { display: grid; grid-template-columns: 100px 88px 32px; align-items: center; gap: 2px; }
+.uw-chat-materials-actions .uw-icon-button { width: 32px; height: 32px; }
+.uw-chat-materials-list tbody tr:hover .uw-chat-materials-actions button:hover:not(:disabled) { background: var(--panel); }
+.uw-chat-materials-action { display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding-inline: 7px; }
+.uw-chat-materials-actions .uw-chat-materials-action { justify-content: flex-start; padding-inline: 4px; }
+.uw-chat-materials-action:disabled { opacity: .55; cursor: default; }
+.uw-chat-materials-empty { display: grid; justify-items: center; gap: 9px; padding: 42px 10px; color: var(--muted); font-size: 13px; }
+.uw-chat-materials-empty button { background: var(--panel-2); }
+.uw-chat-materials-empty button:hover { color: var(--text); }
+@media (max-width: 620px) {
+  .uw-chat-materials-drawer .kb-wiki-drawer-header, .uw-chat-materials-body, .uw-chat-materials-toolbar { padding-inline: 16px; }
+  .uw-chat-materials-batch { margin-inline: 16px; }
+  .uw-chat-materials-scopes { flex-basis: 100%; }
+  .uw-chat-materials-search { flex: 1; }
+  .uw-chat-materials-list th:first-child { width: auto; }
+  .uw-chat-materials-source, .uw-chat-materials-date { display: none; }
+  .uw-chat-materials-narrow-meta { display: inline; }
+  .uw-chat-materials-list th.uw-chat-materials-operations { width: 116px; padding-inline-start: 16px; }
+  .uw-chat-materials-actions { grid-template-columns: repeat(3, 32px); }
+  .uw-chat-materials-actions .uw-chat-materials-action { justify-content: center; padding-inline: 0; }
+  .uw-chat-materials-actions .uw-chat-materials-action span { display: none; }
+}
+
+.uw-chat-materials-toolbar .uw-material-favorites { width: 34px; height: 34px; }
+.uw-app :is(.uw-material-more, .uw-material-favorites):focus-visible,
+.uw-app .uw-material-menu button:focus-visible {
+  outline: none;
+  background: var(--panel-2);
+  box-shadow: none;
+}
+.uw-material-favorites[aria-pressed="true"] { color: var(--brand-deep); background: var(--brand-soft); }
+.uw-material-favorites[aria-pressed="true"] svg { fill: currentColor; }
+.uw-material-menu {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+  width: 172px;
+  max-width: calc(100vw - 16px);
+  max-height: calc(100dvh - 16px);
+  padding: 4px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: 0 6px 20px #0002;
+}
+.uw-material-menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 32px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+.uw-material-menu button:hover { background: var(--panel-2); }
+.uw-material-menu button svg { flex: none; color: var(--text-2); }
+.uw-material-preview {
+  width: min(720px, calc(100% - 24px));
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: 0 14px 40px #0002;
+}
+.uw-material-preview[open] { display: flex; flex-direction: column; }
+.uw-material-preview::backdrop { background: #18171b36; }
+.uw-material-preview .kb-wiki-drawer-header { padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.uw-material-preview h2 { overflow-wrap: anywhere; }
+.uw-material-preview-body { padding: 16px 20px; overflow: auto; }
+.uw-material-preview-body :is(img, video) { display: block; max-width: 100%; max-height: 65dvh; margin: auto; }
+.uw-material-preview-body pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.uw-message[id] { scroll-margin-top: 12px; }
+@media (forced-colors: active) {
+  .uw-app :is(.uw-material-more, .uw-material-favorites):focus-visible,
+  .uw-app .uw-material-menu button:focus-visible { outline: 1px solid Highlight; outline-offset: -2px; }
+}
